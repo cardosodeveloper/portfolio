@@ -58,6 +58,7 @@ body {
 	padding: 2% 60% 2% 15%;
 	position: fixed;
 	background-color: var(--cor-primaria);
+	width: 100vw;
 	z-index: 1000;
 }
 
@@ -345,7 +346,7 @@ body {
 }
 
 .projetos__conteudo__cards {
-	padding: 1em 4em 1em 0;
+	padding: 1em 3em;
 }
 
 .projetos__conteudo__cards__titulos {
@@ -410,6 +411,30 @@ body {
 	padding: 30px 0;
 	transition-duration: 400ms;
 }
+
+.projetos__conteudo__cards__link {
+	padding: 15px 0;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 36px;
+	font-family: var(--fonte-secundária);	
+	color: var(--cor-secundaria);
+	text-decoration: none;
+}
+
+.projetos__conteudo__cards__link:hover {
+	text-decoration: underline;
+}
+
+
+/**************** CARROSSEL ****************/
+
+.swiper-button-prev,
+.swiper-button-next {
+	color: var(--cor-primaria);
+}
+
+/**************** CARROSSEL ****************/
 
 .data {
 	background: var(--cor-gradiente-secundario);
@@ -509,7 +534,7 @@ body {
 /******** Final botão lateral Linkedin Desktop ********/
 
 
-/******** Início botão lateral GitHub Desktop ********/
+/******** Início botão lateral GitHub Mobile ********/
 
 .botao__github__mobile {
     position:fixed;
@@ -540,10 +565,10 @@ body {
     transition: 600ms;
 }
 
-/******** Final botão lateral GitHub Desktop ********/
+/******** Final botão lateral GitHub Mobile ********/
 
 
-/******** Início botão lateral Linkedin Desktop ********/
+/******** Início botão lateral Linkedin Mobile ********/
 
 .botao__linkedin__mobile {
     position:fixed;
@@ -574,7 +599,7 @@ body {
     transition: 600ms;
 }
 
-/******** Final botão lateral Linkedin Desktop ********/
+/******** Final botão lateral Linkedin Mobile ********/
 
 
 /* Final Conteúdo */
