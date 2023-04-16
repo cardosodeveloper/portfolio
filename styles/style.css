@@ -1,0 +1,774 @@
+
+/*Início Importações */
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'); 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Final Importações */
+
+
+/************************ VARIAVEIS ATIVAS ************************/
+
+:root {
+	--cor-primaria: #03001C;
+	--cor-secundaria: #FFFFFF;
+	--cor-terciaria: #301E67;
+	--cor-quartenaria: #000000;
+	--cor-hover: #5B8FB9;
+
+	--cor-foguete: #301e67;
+
+	--botao-github: #532f9d;
+    --botao-github-efeito: #8363c5;
+
+	--cor-gradiente-primario: linear-gradient(#301E67, #03001C);
+	--cor-gradiente-secundario: linear-gradient(#301E67, #000000 60%);
+
+	--fonte-primaria: 'Krona one', sans-serif;
+	--fonte-secundária: 'Montserrat', sans-serif;
+}
+
+/************************ VARIAVEIS ATIVAS ************************/
+
+
+/* Início Default */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* height: 100vh; */
+	box-sizing: border-box;
+	background-color: var(--cor-primaria);
+	color: var(--cor-secundaria);
+}
+
+/* Final Default */
+
+
+/* Início Conteúdo */
+
+
+/* Início Cabeçalho */
+
+.cabecalho {
+	padding: 2% 60% 2% 15%;
+	position: fixed;
+	background-color: var(--cor-primaria);
+	width: 100vw;
+	z-index: 1000;
+}
+
+.cabecalho__menu {
+	width: 940px;
+	display: flex;
+	gap: 80px;
+}
+
+.cabecalho__menu__mobile {
+	width: 940px;
+	display: flex;
+	gap: 80px;
+}
+
+.cabecalho__menu__logo {
+	width: 45px;
+}
+
+.cabecalho__menu__link {
+	font-family: var(--fonte-secundária);
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding: 25px 0;
+	color: var(--cor-terciaria);
+	text-decoration: none;
+}
+
+.cabecalho__menu__link__contato {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	width: 350px;
+	text-align: center;
+	border-radius: 10px;
+	font-size: 24px;
+	padding: 5px 0;
+	text-decoration: none;
+	color: var(--cor-secundaria);
+	font-family: var(--fonte-secundária);
+	font-weight: 600;
+	border: 2px solid var(--cor-terciaria);
+	background-color: var(--cor-terciaria);
+	border-radius: 8px;
+	transition-duration: 400ms;
+}
+
+.cabecalho__menu__link__contato:hover {
+	background-color: var(--cor-secundaria);
+	border: 2px solid var(--cor-secundaria);
+	color: var(--cor-terciaria);
+}
+
+.cabecalho__menu__link:hover {
+	color: var(--cor-secundaria);
+}
+
+/* Final Cabeçalho */
+
+
+/* Início Conteúdo */
+
+.titulo-destaque {
+	color: var(--cor-terciaria);
+}
+
+.apresentacao {
+	padding: 10% 15%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 82px;
+}
+
+.apresentacao__conteudo {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+	font-size: 2.25rem;
+	line-height: 56px;
+	font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__texto {
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 36px;
+	font-family: var(--fonte-secundária);
+}
+
+.apresentacao__links__subtitulos {
+	font-family: var(--fonte-primaria);
+	font-weight: 400;
+	font-size: 24px;
+	text-align: center;
+}
+
+.apresentacao__links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;	
+	gap: 32px;
+}
+
+.apresentacao__links__link {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	width: 60%;
+	text-align: center;
+	border-radius: 16px;
+	font-size: 24px;
+	padding: 21.5px 0;
+	text-decoration: none;
+	color: var(--cor-secundaria);
+	font-family: var(--fonte-secundária);
+	font-weight: 600;
+	border: 2px solid var(--cor-terciaria);
+	border-radius: 8px;
+	transition-duration: 400ms;
+}
+
+.apresentacao__links__link:hover {
+	background-color: var(--cor-hover);
+	width: 65%;
+	padding: 30px 0;
+	transition-duration: 400ms;
+}
+
+.avatar {
+	width: 40%;
+	border: solid 5px var(--cor-terciaria);
+	border-radius: 15px;
+	transition-duration: 600ms;
+}
+
+.avatar:hover {
+	width: 41%;
+	transition-duration: 600ms;
+}
+
+.apresentacao {
+	padding: 10% 15%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.sobre {
+	background-color: var(--cor-quartenaria);
+	display: flex;
+	flex-direction: column;
+	padding: 0 6em 0 0;
+}
+
+.sobre__conteudo {
+	display: flex;
+}
+
+.sobre__conteudo__caixa {
+	padding: 5em;
+	display: flex;
+	flex-direction: column;
+}
+
+.sobre__conteudo__titulo {
+	font-size: 2.25rem;
+	line-height: 56px;
+	font-family: var(--fonte-primaria);
+	font-weight: 400;
+}
+
+.sobre__conteudo__texto {
+	margin: 25px 0;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 36px;
+	font-family: var(--fonte-secundária);
+}
+
+/* Início Foguete */
+
+.foguete__acao {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: var(--cor-quartenaria);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foguete__acao i{
+    position: absolute;
+    top: -250px;
+    background: rgba(255,255,255, 0.5);
+    animation: animateStars linear infinite;
+}
+@keyframes animateStars {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(200vh);
+    }
+}
+
+.foguete__acao .foguete__acao__rocket{
+    position: relative;
+    animation: animate 0.2s ease infinite;
+}
+@keyframes animate {
+        0%,100%{
+            transform: translateY(-2px);
+        }
+        50%{
+            transform: translateY(2px);
+        }
+
+}
+.foguete__acao .foguete__acao__rocket::before{
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 200px;
+    background: linear-gradient(#00d0ff,transparent);
+}
+
+.foguete__acao .foguete__acao__rocket::after{
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 200px;
+    background: linear-gradient(#00d0ff,transparent);
+    filter: blur(20px);
+}
+
+/* Final Foguete */
+
+
+.projetos {
+	background-color: var(--cor-terciaria);
+	padding: 10% 15%;
+	display: flex;
+	flex-direction: column;
+}
+
+.projetos__conteudo__titulo {
+	font-size: 2.25rem;
+	line-height: 56px;
+	font-family: var(--fonte-primaria);
+	font-weight: 400;
+}
+
+.projetos__conteudo__subtitulo {
+	margin: 3em 0 0.5em 0;
+	font-size: 1.9rem;
+	line-height: 56px;
+	font-family: var(--fonte-primaria);
+	font-weight: 300;
+}
+
+.projetos__conteudo__texto {
+	margin: 25px 0;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 36px;
+	font-family: var(--fonte-secundária);
+}
+
+.projetos__conteudo__caixa__cards {
+	display: flex;
+}
+
+.projetos__conteudo__cards {
+	padding: 1em 3em;
+}
+
+.projetos__conteudo__cards__titulos {
+	font-size: 1.5rem;
+	line-height: 56px;
+	font-family: var(--fonte-primaria);
+	font-weight: 400;
+}
+
+.projetos__conteudo__cards__imagem {
+	width: 100%;
+	transition: 600ms;
+    -webkit-filter:grayscale(100%);	
+
+}
+
+.projetos__conteudo__cards__imagem:hover {
+    -webkit-filter:grayscale(0%);
+    transition: 1s;
+}
+
+
+.projetos__conteudo__cards__texto {
+	padding: 15px 0;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 36px;
+	font-family: var(--fonte-secundária);
+}
+
+.projetos__conteudo__cards__textodestaque {
+	padding: 15px 0 5px 0;
+	font-size: 1.3rem;
+	font-weight: 900;
+	line-height: 36px;
+	color: var(--cor-primaria);
+	font-family: var(--fonte-secundária);
+}
+
+.projetos__conteudo__cards__botao {
+	display: flex;
+	justify-content: center;
+	margin: 2em 0;
+	gap: 16px;
+	width: 60%;
+	text-align: center;
+	border-radius: 16px;
+	font-size: 24px;
+	padding: 21.5px 0;
+	text-decoration: none;
+	color: var(--cor-secundaria);
+	font-family: var(--fonte-secundária);
+	font-weight: 600;
+	border: 2px solid var(--cor-secundaria);
+	border-radius: 8px;
+	transition-duration: 400ms;
+}
+
+.projetos__conteudo__cards__botao:hover {
+	background-color: var(--cor-hover);
+	width: 65%;
+	padding: 30px 0;
+	transition-duration: 400ms;
+}
+
+.projetos__conteudo__cards__link {
+	padding: 15px 0;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 36px;
+	font-family: var(--fonte-secundária);	
+	color: var(--cor-secundaria);
+	text-decoration: none;
+}
+
+.projetos__conteudo__cards__link:hover {
+	text-decoration: underline;
+}
+
+
+/**************** CARROSSEL ****************/
+
+.swiper-button-prev,
+.swiper-button-next {
+	color: var(--cor-primaria);
+}
+
+/**************** CARROSSEL ****************/
+
+.data {
+	background: var(--cor-gradiente-secundario);
+	padding: 10% 15%;
+	display: flex;
+	flex-direction: column;
+}
+
+.data__conteudo__titulo {
+	font-size: 2.25rem;
+	line-height: 56px;
+	font-family: var(--fonte-primaria);
+	font-weight: 400;
+}
+
+.data__conteudo__texto {
+	margin: 25px 0;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 36px;
+	font-family: var(--fonte-secundária);
+}
+
+/******** Slide Projetos em Java Script ********/
+
+
+
+
+/******** Slide Projetos em Java Script ********/
+
+
+/******** Início botão lateral GitHub Desktop ********/
+
+.botao__github {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:300px;
+    right:15px;
+    background-color:var(--botao-github);
+    color:var(--fonte-secundária);
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:1000;
+    transition: 600ms;
+}
+
+.botao__github a{
+    text-decoration: none;
+    color: var(--fonte-secundária);
+}
+
+.botao__github i{
+    margin-top: 16px;
+}
+
+.botao__github:hover {
+    background-color: var(--botao-github-efeito);
+    transition: 600ms;
+}
+
+/******** Final botão lateral GitHub Desktop ********/
+
+
+/******** Início botão lateral Linkedin Desktop ********/
+
+.botao__linkedin {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:220px;
+    right:15px;
+    background-color:var(--botao-github);
+    color:var(--fonte-secundária);
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:1000;
+    transition: 600ms;
+}
+
+.botao__linkedin a{
+    text-decoration: none;
+    color: var(--fonte-secundária);
+}
+
+.botao__linkedin i{
+    margin-top: 16px;
+}
+
+.botao__linkedin:hover {
+    background-color: var(--botao-github-efeito);
+    transition: 600ms;
+}
+
+/******** Final botão lateral Linkedin Desktop ********/
+
+
+/******** Início botão lateral GitHub Mobile ********/
+
+.botao__github__mobile {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:15px;
+    background-color:var(--botao-github);
+    color:var(--fonte-secundária);
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:1000;
+    transition: 600ms;
+}
+
+.botao__github__mobile a{
+    text-decoration: none;
+    color: var(--fonte-secundária);
+}
+
+.botao__github__mobile i{
+    margin-top: 16px;
+}
+
+.botao__github__mobile:hover {
+    background-color: var(--botao-github-efeito);
+    transition: 600ms;
+}
+
+/******** Final botão lateral GitHub Mobile ********/
+
+
+/******** Início botão lateral Linkedin Mobile ********/
+
+.botao__linkedin__mobile {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    left:15px;
+    background-color:var(--botao-github);
+    color:var(--fonte-secundária);
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:1000;
+    transition: 600ms;
+}
+
+.botao__linkedin__mobile a{
+    text-decoration: none;
+    color: var(--fonte-secundária);
+}
+
+.botao__linkedin__mobile i{
+    margin-top: 16px;
+}
+
+.botao__linkedin__mobile:hover {
+    background-color: var(--botao-github-efeito);
+    transition: 600ms;
+}
+
+/******** Final botão lateral Linkedin Mobile ********/
+
+
+/* Final Conteúdo */
+
+
+/* Início Rodapé */
+
+
+.rodape {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--cor-secundaria);
+	background-color: var(--cor-quartenaria);
+	padding: 75px 0 75px 0;
+	text-align: center;
+	font-family: var(--fonte-secundária);
+	font-weight: 400;
+}
+
+.rodape__logo {
+	width: 5%;
+	margin: 0 0 25px 0;
+}
+
+.rodape__botao__dev {
+	width: 25%;
+    border-radius: 8px;
+    padding: 0.5em;
+    background-color: var(--botao-github);
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+    transition: 600ms;
+    margin: 20px 0;
+}
+
+.rodape__botao__dev:hover {
+    background-color: var(--botao-github-efeito);
+    transition: 600ms;
+}
+
+/* Final Rodapé */
+
+
+/******** Início do Mobile ********/
+
+@media (min-width: 1201px) {
+	.cabecalho__menu__mobile {
+		display: none;
+	}
+
+	.redes__mobile {
+		display: none;
+	}
+
+
+}	
+
+@media (max-width: 1200px) {
+	.cabecalho {
+		padding: 6%;
+	}
+
+	.cabecalho__menu{
+		display: none;
+	}
+
+	.cabecalho__menu__link__contato {
+		width: 205px;
+	}
+
+	.apresentacao {
+		flex-direction: column-reverse;
+		padding: 45% 5%;
+	}
+
+	.apresentacao__conteudo {
+		width: 100%;
+	}
+
+	.apresentacao__conteudo__titulo {
+		font-size: 2.0rem;
+	}
+
+	.avatar {
+		display: none;
+	}
+
+	.apresentacao__links__link {
+	width: 100%;
+	}
+
+.apresentacao__links__link:hover {
+	width: 100%;
+	}
+
+	.sobre {
+		flex-direction: column-reverse;
+		padding: 5% 5%;
+	}
+
+	.sobre__conteudo {
+		display: block;
+		width: 100%;
+	}
+
+	.sobre__conteudo__caixa {
+    padding: 1em;
+	}
+
+	.sobre__conteudo__titulo {
+		font-size: 2.0rem;
+	}
+
+	.projetos {
+		flex-direction: column-reverse;
+		padding: 5% 5%;
+	}
+
+	.projetos__conteudo {
+		width: 100%;
+	}
+
+	.projetos__conteudo__titulo {
+		font-size: 2.0rem;
+	}
+
+	.projetos__conteudo__caixa__cards {
+		flex-direction: column;
+	}
+
+	.projetos__conteudo__cards {
+	    padding: 1em 0;
+	}
+
+	.projetos__conteudo__cards__botao {
+    	width: 100%
+	}
+
+	.projetos__conteudo__cards__botao:hover {
+		width: 100%;
+	}
+	.data {
+		flex-direction: column-reverse;
+		padding: 5% 5%;
+	}
+
+	.data__conteudo {
+		width: 100%;
+	}
+
+	.data__conteudo__titulo {
+		font-size: 2.0rem;
+	}
+
+	.rodape__botao__dev {
+	width: 60%;
+	}
+
+	.redes__desktop {
+		display: none;
+	}	
+
+	.rodape__logo {
+	width: 25%;
+	}
+
+}
+
+/******** Final do Mobile ********/
