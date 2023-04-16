@@ -14,6 +14,9 @@
 		<!-- Integrações -->
 		<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
 		<link rel="stylesheet" href="./styles/style.css">
 		<!-- Integrações -->
 
@@ -21,7 +24,7 @@
 	</head>
 
 	<body>
-		<header class="cabecalho">
+		<header class="cabecalho" id="cabecalho">
 
 			<!--Início Menu Desktop-->
 			<nav>
@@ -71,28 +74,28 @@
                 			<img src="./assets/foguete.png" alt="Animação de um foguete em javascript">
            			 	</div>
        			 	</div>
-        			<script>
-			            function stars(){
-			               let count = 150;
-			               let foguete__acao = document.querySelector('.foguete__acao');
-			               let i =0;
-			               while(i < count){
-			                    let star = document.createElement('i');
-			                    let x = Math.floor(Math.random() * window.innerWidth);
-			                    let duration = Math.random() * 1;
-			                    let h = Math.random() * 100;
+					<script>
+						function stars(){
+						    let count = 150;
+						    let foguete__acao = document.querySelector('.foguete__acao');
+						    let i =0;
+						    while(i < count){
+						        let star = document.createElement('i');
+						        let x = Math.floor(Math.random() * window.innerWidth);
+						        let duration = Math.random() * 1;
+						        let h = Math.random() * 100;
 
-			                    star.style.left = x + 'px';
-			                    star.style.width = 1 + 'px';
-			                    star.style.height = 60 + 'px';
-			                    star.style.animationDuration = duration + 's';
-			                    
-			                    foguete__acao.appendChild(star);
-			                    i++;
-			                }
-			            }
-			            stars();
-       				</script>
+						        star.style.left = x + 'px';
+						        star.style.width = 1 + 'px';
+						        star.style.height = 60 + 'px';
+						        star.style.animationDuration = duration + 's';
+						                    
+						        foguete__acao.appendChild(star);
+						        i++;
+						    }
+						}
+						stars();
+			       	</script>
        				<!--Foguete em JavaScript-->
 
        				<div class="sobre__conteudo__caixa">
@@ -109,61 +112,93 @@
 				<div class="projetos__conteudo">
 					<h2 class="projetos__conteudo__titulo">Projetos</h2>
 					<p class="projetos__conteudo__texto">Algumas páginas desenvolvidas utilizando as principais técnias de HTML, CSS e JavaScript.</p>
+					
+					<!-- CARROSSEL -->
+					<div class="projetos_carrossel">
+						<h3 class="projetos__conteudo__subtitulo">WordPress</h3>
+						<div class="swiper">
+
+						  <!-- If we need pagination -->
+						  <div class="swiper-pagination"></div>
+						  <!-- Additional required wrapper -->
+						  <div class="swiper-wrapper">
+						    <!-- Slides -->
+						    <div class="swiper-slide">
+								<div class="projetos__conteudo__cards">
+									<h4 class="projetos__conteudo__cards__titulos">Blog do Spotter</h4>
+									<a href="https://blogdospotter.com.br/"><img src="./assets/blogdospotter.jpg" class="projetos__conteudo__cards__imagem" alt="Card do Blog do Spotter"></a>
+									<p class="projetos__conteudo__cards__texto">Blog desenvolvido em WordPress voltado para a área da aviação</p>
+									<p class="projetos__conteudo__cards__textodestaque">Projeto desenvolvido utilizando o Elementor Pro e CSS</p>
+									<a href="https://blogdospotter.com.br/" class="projetos__conteudo__cards__botao">Visualizar</a>
+								</div>
+						    </div>
+						    <div class="swiper-slide">
+								<div class="projetos__conteudo__cards">
+									<h4 class="projetos__conteudo__cards__titulos">Descubra Portugal</h4>
+									<a href="https://descubraportugal.co/"><img src="./assets/descubra.png" class="projetos__conteudo__cards__imagem" alt="Card do site Descubra Portugal"></a>
+									<p class="projetos__conteudo__cards__texto">Site desenvolvido em WordPress voltado para a área da relocation para Portugal</p>
+									<p class="projetos__conteudo__cards__textodestaque">Projeto desenvolvido utilizando o Elementor Pro e CSS</p>
+									<a href="https://descubraportugal.co/" class="projetos__conteudo__cards__botao">Visualizar</a>
+								</div>
+						    </div>
+						    <div class="swiper-slide">
+								<div class="projetos__conteudo__cards">
+									<h4 class="projetos__conteudo__cards__titulos">Rocket Music</h4>
+									<a href="https://rocketmusic.com.br/"><img src="./assets/rocketmusic.png" class="projetos__conteudo__cards__imagem" alt="Card do blog Rocket Music"></a>
+									<p class="projetos__conteudo__cards__texto">Blog desenvolvido em WordPress voltado para a área da música.</p>
+									<p class="projetos__conteudo__cards__textodestaque">Projeto desenvolvido utilizando o Elementor Pro e CSS</p>
+									<a href="https://rocketmusic.com.br/" class="projetos__conteudo__cards__botao">Visualizar</a>
+								</div>
+						    </div>
+						    <div class="swiper-slide">
+								<div class="projetos__conteudo__cards">
+									<h4 class="projetos__conteudo__cards__titulos">Comunicaviation</h4>
+									<a href="https://cardosodeveloper.github.io/comunicaviation/"><img src="./assets/comunicaviation.png" class="projetos__conteudo__cards__imagem" alt="Card do site Comunicaviation"></a>
+									<p class="projetos__conteudo__cards__texto">Site institucional desenvolvido em WordPress voltado para a área da aviação</p>
+									<p class="projetos__conteudo__cards__textodestaque">Projeto desenvolvido utilizando o Elementor Pro e CSS</p>
+									<a href="https://cardosodeveloper.github.io/comunicaviation/" class="projetos__conteudo__cards__botao">Visualizar</a>
+								</div>
+						    </div>					    
+						  </div>
+						  <!-- If we need navigation buttons -->
+						  <div class="swiper-button-prev"></div>
+						  <div class="swiper-button-next"></div>
+						</div>
+						<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+						<script>
+							const swiper = new Swiper('.swiper', {
+								spaceBetween: 5,
+								slidesPerView: 3,
+								pagination: {
+									el: '.swiper-pagination',
+									type: 'bullets',
+								},
+								navigation: {
+								    nextEl: '.swiper-button-next',
+								    prevEl: '.swiper-button-prev',
+								},
+								 autoplay: {
+								   delay: 5000,
+								},
+							});
+						</script> 
+					</div>
+					<!-- CARROSSEL -->
 
 					<h3 class="projetos__conteudo__subtitulo">Cursos e Bootcamps</h3>
 					<div class="projetos__conteudo__caixa__cards">
 						<div class="projetos__conteudo__cards">
 							<h4 class="projetos__conteudo__cards__titulos">Alura Plus</h4>
-							<img src="./assets/aluraplus.jpg" class="projetos__conteudo__cards__imagem" alt="Card da Alura Plus">
-							<p class="projetos__conteudo__cards__texto">Site fictício da página do Alura Plus</p>
-							<p class="projetos__conteudo__cards__textodestaque">Projeto desenvolvido utilizando HTML e CSS</p>
-							<a href="https://cardosodeveloper.github.io/aluraplus/" class="projetos__conteudo__cards__botao">Visualizar</a>
+							<a href="https://cardosodeveloper.github.io/aluraplus/"><img src="./assets/aluraplus.jpg" class="projetos__conteudo__cards__imagem" alt="Card da Alura Plus"></a>
+							<a href="https://cardosodeveloper.github.io/aluraplus/" class="projetos__conteudo__cards__link">Site fictício da página do Alura Plus</a>
 						</div>
 						<div class="projetos__conteudo__cards">
 							<h4 class="projetos__conteudo__cards__titulos">Barbearia Alura</h4>
-							<img src="./assets/barbeariaalura.jpg" class="projetos__conteudo__cards__imagem" alt="Card da Barbearia Alura">
-							<p class="projetos__conteudo__cards__texto">Site fictício da página da Barbearia Alura</p>
-							<p class="projetos__conteudo__cards__textodestaque">Projeto desenvolvido utilizando HTML e CSS</p>
-							<a href="https://cardosodeveloper.github.io/barbeariaalura/" class="projetos__conteudo__cards__botao">Visualizar</a>
+							<a href="https://cardosodeveloper.github.io/barbeariaalura/"><img src="./assets/barbeariaalura.jpg" class="projetos__conteudo__cards__imagem" alt="Card da Barbearia Alura"></a>
+							<a href="https://cardosodeveloper.github.io/barbeariaalura/" class="projetos__conteudo__cards__link">Site fictício da página da Barbearia Alura</a>
 						</div>
-					</div>	
-
-					<h3 class="projetos__conteudo__subtitulo">WordPress</h3>
-
-					<div class="projetos__conteudo__caixa__cards">
-						<div class="projetos__conteudo__cards">
-							<h4 class="projetos__conteudo__cards__titulos">Blog do Spotter</h4>
-							<img src="./assets/blogdospotter.jpg" class="projetos__conteudo__cards__imagem" alt="Card do Blog do Spotter">
-							<p class="projetos__conteudo__cards__texto">Blog desenvolvido em WordPress voltado para a área da aviação</p>
-							<p class="projetos__conteudo__cards__textodestaque">Projeto desenvolvido utilizando o Elementor Pro elementos em CSS</p>
-							<a href="https://blogdospotter.com.br/" class="projetos__conteudo__cards__botao">Visualizar</a>
-						</div>
-						<div class="projetos__conteudo__cards">
-							<h4 class="projetos__conteudo__cards__titulos">Descubra Portugal</h4>
-							<img src="./assets/descubra.png" class="projetos__conteudo__cards__imagem" alt="Card do site Descubra Portugal">
-							<p class="projetos__conteudo__cards__texto">Site desenvolvido em WordPress voltado para a área da relocation para Portugal</p>
-							<p class="projetos__conteudo__cards__textodestaque">Projeto desenvolvido utilizando o Elementor Pro elementos em CSS</p>
-							<a href="https://descubraportugal.co/" class="projetos__conteudo__cards__botao">Visualizar</a>
-						</div>
-					</div>	
-
-					<div class="projetos__conteudo__caixa__cards">
-						<div class="projetos__conteudo__cards">
-							<h4 class="projetos__conteudo__cards__titulos">Comunicaviation</h4>
-							<img src="./assets/comunicaviation.png" class="projetos__conteudo__cards__imagem" alt="Card do site Comunicaviation">
-							<p class="projetos__conteudo__cards__texto">Site institucional desenvolvido em WordPress voltado para a área da aviação</p>
-							<p class="projetos__conteudo__cards__textodestaque">Projeto desenvolvido utilizando o Elementor Pro elementos em CSS</p>
-							<a href="https://cardosodeveloper.github.io/comunicaviation/" class="projetos__conteudo__cards__botao">Visualizar</a>
-						</div>
-						<div class="projetos__conteudo__cards">
-							<h4 class="projetos__conteudo__cards__titulos">Rocket Music</h4>
-							<img src="./assets/rocketmusic.png" class="projetos__conteudo__cards__imagem" alt="Card do blog Rocket Music">
-							<p class="projetos__conteudo__cards__texto">Blog desenvolvido em WordPress voltado para a área da música.</p>
-							<p class="projetos__conteudo__cards__textodestaque">Projeto desenvolvido utilizando o Elementor Pro elementos em CSS</p>
-							<a href="https://rocketmusic.com.br/" class="projetos__conteudo__cards__botao">Visualizar</a>
-						</div>
-					</div>																												
-
+					</div>
+																															
 				</div>
 			</section>	
 
@@ -200,7 +235,8 @@
 		</footer>
 
 		<!-- Scripts -->
-		<script  src="./js/script.js"></script>
+		
+
 		<!-- Scripts -->
 
 	</body>
