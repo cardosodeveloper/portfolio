@@ -336,6 +336,12 @@ body {
 	gap: 2em;
 }
 
+.card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 .card-img-top {
 	transition: 600ms;
 	-webkit-filter:grayscale(100%);	
