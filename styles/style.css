@@ -94,6 +94,12 @@ body {
 	padding: 25px 0;
 	color: var(--cor-terciaria);
 	text-decoration: none;
+	transition-duration: 600ms;
+}
+
+.cabecalho__menu__link:hover {
+	color: var(--cor-secundaria);
+	transition-duration: 600ms;
 }
 
 .cabecalho__menu__link__contato {
@@ -115,17 +121,14 @@ body {
 	border: 2px solid var(--cor-terciaria);
 	background-color: var(--cor-terciaria);
 	border-radius: 8px;
-	transition-duration: 400ms;
+	transition-duration: 600ms;
 }
 
 .cabecalho__menu__link__contato:hover {
 	background-color: var(--cor-secundaria);
 	border: 2px solid var(--cor-secundaria);
 	color: var(--cor-terciaria);
-}
-
-.cabecalho__menu__link:hover {
-	color: var(--cor-secundaria);
+	transition-duration: 600ms;
 }
 
 /* Final Cabeçalho */
