@@ -1,0 +1,41 @@
+.timeline {
+  width: 100%;
+  height: 500px; /* Altura da linha do tempo */
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  width: 2px; /* Largura da linha vertical */
+  height: 100%; /* Altura da linha */
+  background-color: #333; /* Cor da linha */
+  left: 50%; /* Centralizar a linha */
+  transform: translateX(-50%); /* Para centralizar horizontalmente */
+}
+
+.timeline-point {
+  position: absolute;
+  width: 10px; /* Largura do ponto */
+  height: 10px; /* Altura do ponto */
+  background-color: #333; /* Cor do ponto */
+  border-radius: 50%; /* Para torná-lo um círculo */
+  left: 50%; /* Centralizar o ponto na linha */
+  transform: translateX(-50%); /* Para centralizar horizontalmente */
+}
+
+.timeline-item-date {
+  position: absolute;
+  top: 50%; /* Alinhar no centro verticalmente */
+  right: calc(50% + 10px); /* Distância da data à linha */
+  transform: translateY(-50%); /* Para centralizar verticalmente */
+  text-align: right; /* Alinhar texto à direita */
+  max-width: 100px; /* Largura máxima da data */
+}
+
+.timeline-item-description {
+  position: absolute;
+  top: 50%; /* Alinhar no centro verticalmente */
+  left: calc(50% + 10px); /* Distância da descrição à linha */
+  transform: translateY(-50%); /* Para centralizar verticalmente */
+  max-width: 200px; /* Largura máxima da descrição */
+}
